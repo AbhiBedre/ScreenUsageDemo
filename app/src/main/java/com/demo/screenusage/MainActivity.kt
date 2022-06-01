@@ -49,12 +49,12 @@ class MainActivity : BaseActivity() {
 
     override fun onResume() {
         super.onResume()
-        ScreenUsage.screenOn(this.javaClass.simpleName)
+        com.demo.screenusage.ScreenUsage.screenOn(this.javaClass.simpleName)
     }
 
     override fun onPause() {
         super.onPause()
         Log.i("TAG", "onPause: ${this.javaClass.simpleName}")
-        ScreenUsage.screenOff(this.javaClass.simpleName)
+        com.demo.screenusage.ScreenUsage.screenOff(this.javaClass.simpleName)
     }
 }

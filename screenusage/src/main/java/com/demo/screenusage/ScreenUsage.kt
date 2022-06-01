@@ -7,7 +7,7 @@ object ScreenUsage {
     var startTime: Long = System.currentTimeMillis()
     var elapsedTime: Long = 0
     val pref: SharedPreferences? =
-        MyApp.context?.getSharedPreferences("MyPref", MODE_PRIVATE) ?: null
+        MyAppLibrary.context?.getSharedPreferences("MyPref", MODE_PRIVATE) ?: null
     var editor = pref?.edit()
 
     fun screenOn(simpleName: String) {
