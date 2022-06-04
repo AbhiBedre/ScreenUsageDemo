@@ -10,6 +10,7 @@ class MyApp : Application() {
         super.onCreate()
         //  instance = this;
         mContext = applicationContext
+        ScreenUsage.setPref(applicationContext)
     }
 
     companion object {

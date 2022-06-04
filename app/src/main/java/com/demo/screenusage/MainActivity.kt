@@ -29,10 +29,11 @@ class MainActivity : BaseActivity() {
         )
 
         Log.i("TAG", "onCreate: ${this.javaClass.name}")
-        showScreenUsage()
+//        showScreenUsage()
+        Log.i("TAG", "retrieveScreenUsage: ${ScreenUsage.retrieveScreenUsage()}")
     }
 
-    private fun showScreenUsage() {
+    /*private fun showScreenUsage() {
         val allEntries: Map<String, *>? = ScreenUsage.pref?.all
         if (allEntries != null) {
             Log.i("TAG", "showScreenUsage: $allEntries")
@@ -45,7 +46,7 @@ class MainActivity : BaseActivity() {
                 Log.i("TAG", "showScreenUsage: $it")
             }
         }
-    }
+    }*/
 
     override fun onResume() {
         super.onResume()
